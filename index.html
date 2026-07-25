@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="Privacy policy for Sway, the drink pacing app. Everything stays on your device.">
+<title>Sway Privacy Policy</title>
+<style>
+  :root {
+    --bg: #0A0D14;
+    --fg: #E7ECF5;
+    --accent: #4EE66A;
+    --muted: #9AA3B5;
+    --rule: #1C2230;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    -webkit-text-size-adjust: 100%;
+  }
+  main {
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 4rem;
+  }
+  header { margin-bottom: 2rem; }
+  .app-name {
+    color: var(--accent);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 0 0 0.5rem;
+  }
+  h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin: 0 0 0.5rem;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 0.9375rem;
+    margin: 0;
+  }
+  h2 {
+    color: var(--accent);
+    font-size: 1.25rem;
+    margin: 2.25rem 0 0.75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  li::marker { color: var(--accent); }
+  strong { color: var(--fg); }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.9375rem;
+  }
+  @media (min-width: 640px) {
+    main { padding-top: 4rem; }
+    h1 { font-size: 2.5rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="app-name">Sway</p>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: 2026-07-25</p>
+  </header>
+
+  <p>Sway helps you pace your alcohol intake by estimating your blood alcohol
+  concentration (BAC) from what you log. This policy explains what data the app
+  handles and where it goes. In short: nowhere.</p>
+
+  <h2>What the app stores</h2>
+  <p>To do its job, Sway stores the following on your device only:</p>
+  <ul>
+    <li>Drinks and food you log (type, volume, strength, timing)</li>
+    <li>Body parameters you enter (weight, sex), used solely for the BAC estimate</li>
+    <li>Your settings (target zone, units, reminder preferences, driving-limit display)</li>
+    <li>Finished sessions and the ratings you optionally give them (overall, hangover, memory)</li>
+  </ul>
+
+  <h2>Where the data goes</h2>
+  <ul>
+    <li><strong>Your data lives on your device.</strong> Sway has no server, no
+      account system, and no network access for your data. Nothing is ever sent to
+      the developer. There is nowhere for it to be sent.</li>
+    <li><strong>Android backup.</strong> Your data is included in Android's own
+      backup so you keep your history when you switch or reset a phone. On Android
+      12 and newer this backup is end-to-end encrypted with your device's lock
+      screen. Neither Google nor the developer can read it. A device that can't
+      provide that encryption is excluded from cloud backup entirely. Android
+      versions older than 12 are excluded from cloud backup too; there you keep
+      your history with the in-app Export and Import instead. Device-to-device
+      transfer, which you start yourself when moving to a new phone, stays local.</li>
+    <li><strong>No analytics, no tracking, no ads.</strong> The app contains no
+      third-party SDKs that collect data.</li>
+    <li><strong>Uninstalling the app removes your data from the device.</strong>
+      A copy may remain in your own encrypted Android backup until it expires or
+      you delete it from your Google account.</li>
+  </ul>
+
+  <h2>Permissions and background behavior</h2>
+  <ul>
+    <li><strong>Notifications</strong>: used for the ongoing session status and the
+      check-in reminders you configure. You can decline the permission or turn
+      either off in settings.</li>
+    <li><strong>Vibration</strong>: check-in reminders vibrate strongly, so they cut
+      through a loud night. You choose the style, or turn them off.</li>
+    <li><strong>Foreground service</strong>: while a session runs, a small service
+      keeps the status notification current and fires your reminders on time. It
+      starts only when you start a session and stops when the session ends. It does
+      not use sensors, location, or the network.</li>
+    <li><strong>Start after reboot</strong>: if your phone restarts mid-session, the
+      app restores the session notification. Nothing else runs in the background.</li>
+  </ul>
+
+  <h2>Your controls</h2>
+  <ul>
+    <li><strong>Export</strong>: Settings, Your data, Export shares your complete
+      data as JSON with any app you choose. Data you export leaves the app's
+      control.</li>
+    <li><strong>Import</strong>: Settings, Your data, Import loads a previously
+      exported JSON file, replacing everything currently in the app (after a
+      confirmation).</li>
+    <li><strong>Delete</strong>: Settings, Your data, Delete all removes everything
+      and resets the app to a fresh state, immediately.</li>
+  </ul>
+
+  <h2>Health disclaimer</h2>
+  <p>BAC values shown by Sway are population-average <strong>estimates</strong>,
+  not measurements. They must never be used to decide whether you are fit to drive
+  or to make any other safety decision.</p>
+
+  <h2>Changes and contact</h2>
+  <p>Material changes to this policy will be noted in the app's release notes.</p>
+  <p>Questions: <strong>support@swayapp.no</strong></p>
+
+  <footer>
+    <p>Sway is an Android app. All processing happens on your device.</p>
+  </footer>
+</main>
+</body>
+</html>
