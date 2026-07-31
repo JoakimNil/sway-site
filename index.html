@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark">
-<meta name="description" content="Privacy policy for Sway, the drink pacing app. Everything stays on your device.">
+<meta name="description" content="Privacy policy for Sway, the drink pacing app. No account, no server, no analytics.">
 <title>Sway Privacy Policy</title>
 <style>
   :root {
@@ -79,12 +79,16 @@
   <header>
     <p class="app-name">Sway</p>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: 2026-07-25</p>
+    <p class="updated">Last updated: 2026-07-31</p>
   </header>
 
   <p>Sway helps you pace your alcohol intake by estimating your blood alcohol
   concentration (BAC) from what you log. This policy explains what data the app
   handles and where it goes. In short: nowhere.</p>
+
+  <p>It covers Sway on Android and on iPhone and Apple Watch. Both are built from
+  the same core and handle your data the same way: on the device, no server, no
+  account, no analytics.</p>
 
   <h2>What the app stores</h2>
   <p>To do its job, Sway stores the following on your device only:</p>
@@ -108,11 +112,22 @@
       versions older than 12 are excluded from cloud backup too; there you keep
       your history with the in-app Export and Import instead. Device-to-device
       transfer, which you start yourself when moving to a new phone, stays local.</li>
+    <li><strong>iPhone backup.</strong> Sway's data file sits in the app's own
+      storage, so it is included in your iPhone's backup when you have one turned
+      on, and your history follows you to a new phone. iCloud Backup is encrypted
+      in transit and on Apple's servers, but Apple holds the key unless you turn on
+      Advanced Data Protection, which makes it end-to-end encrypted. A backup to
+      your own computer never leaves that computer. Either way the backup is yours:
+      in iOS Settings you can leave Sway out of it, or turn it off entirely.</li>
+    <li><strong>Apple Watch.</strong> If you use the watch app, your phone sends the
+      current session and your body parameters to your own paired watch, and a drink
+      you log on the watch goes back the same way. That exchange is device to device,
+      not through a server.</li>
     <li><strong>No analytics, no tracking, no ads.</strong> The app contains no
       third-party SDKs that collect data.</li>
     <li><strong>Uninstalling the app removes your data from the device.</strong>
-      A copy may remain in your own encrypted Android backup until it expires or
-      you delete it from your Google account.</li>
+      A copy may remain in your own backup until it expires or you delete it from
+      your Google or Apple account.</li>
   </ul>
 
   <h2>Permissions and background behavior</h2>
@@ -120,26 +135,35 @@
     <li><strong>Notifications</strong>: used for the ongoing session status and the
       check-in reminders you configure. You can decline the permission or turn
       either off in settings.</li>
-    <li><strong>Vibration</strong>: check-in reminders vibrate strongly, so they cut
-      through a loud night. You choose the style, or turn them off.</li>
-    <li><strong>Foreground service</strong>: while a session runs, a small service
-      keeps the status notification current and fires your reminders on time. It
-      starts only when you start a session and stops when the session ends. It does
-      not use sensors, location, or the network.</li>
-    <li><strong>Start after reboot</strong>: if your phone restarts mid-session, the
-      app restores the session notification. Nothing else runs in the background.</li>
+    <li><strong>Reminders that cut through a loud night</strong>: on Android a
+      check-in vibrates strongly; on iPhone it arrives as a time-sensitive
+      notification with the default sound. You choose the style, or turn them
+      off.</li>
+    <li><strong>Foreground service (Android)</strong>: while a session runs, a small
+      service keeps the status notification current and fires your reminders on
+      time. It starts only when you start a session and stops when the session ends.
+      It does not use sensors, location, or the network.</li>
+    <li><strong>Start after reboot (Android)</strong>: if your phone restarts
+      mid-session, the app restores the session notification. Nothing else runs in
+      the background.</li>
+    <li><strong>Live Activity (iPhone)</strong>: while a session runs, the status can
+      sit on the Lock Screen and in the Dynamic Island, drawn on your device from
+      what you logged. Swipe it away or turn it off whenever you like. Check-in
+      reminders are handed to the system in advance rather than kept alive by a
+      background process, and nothing here uses sensors, location, or the
+      network.</li>
   </ul>
 
   <h2>Your controls</h2>
+  <p>Both apps keep these in Settings, under Your data on Android and Data &amp;
+  privacy on iPhone.</p>
   <ul>
-    <li><strong>Export</strong>: Settings, Your data, Export shares your complete
-      data as JSON with any app you choose. Data you export leaves the app's
-      control.</li>
-    <li><strong>Import</strong>: Settings, Your data, Import loads a previously
-      exported JSON file, replacing everything currently in the app (after a
-      confirmation).</li>
-    <li><strong>Delete</strong>: Settings, Your data, Delete all removes everything
-      and resets the app to a fresh state, immediately.</li>
+    <li><strong>Export</strong> shares your complete data as JSON with any app you
+      choose. Data you export leaves the app's control.</li>
+    <li><strong>Import</strong> loads a previously exported JSON file, replacing
+      everything currently in the app (after a confirmation).</li>
+    <li><strong>Delete all</strong> removes everything and resets the app to a fresh
+      state, immediately.</li>
   </ul>
 
   <h2>Health disclaimer</h2>
@@ -152,7 +176,7 @@
   <p>Questions: <strong>support@swayapp.no</strong></p>
 
   <footer>
-    <p>Sway is an Android app. All processing happens on your device.</p>
+    <p>All processing happens on your device.</p>
   </footer>
 </main>
 </body>
